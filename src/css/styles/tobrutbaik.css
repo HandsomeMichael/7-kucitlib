@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ======================[ Tobrut Baik CSS ]========================= */
+
+:root
+{
+    --clr-white: #e9e8ff;
+    --clr-gray: #2e2d35;
+    --clr-grayer: #1b1a20;
+
+    --rgb-fade-gray: rgba(46, 45, 53, 0.9);
+}
+
+*
+{
+    color: var(--clr-white);
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    background-color: var(--clr-gray);
+}
+
+
+.bg-sub {background-color: var(--clr-grayer);}
+
+/* Navbar */
+
+.kucit-navbar
+{
+
+    /* index gotta be on top with anything */
+    z-index: 999;
+
+    /* absolute position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* display setup */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Put your styles here */
+
+    backdrop-filter: blur(20px); 
+    /* background-color: var(--clr-main); */
+    transition: all .50s ease;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* height: 50px; */
+
+    background-color: var(--rgb-fade-gray);
+
+}
+
+.kucit-navbar.toggled
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+.kucit-navbar ul
+{
+    display: flex;
+}
